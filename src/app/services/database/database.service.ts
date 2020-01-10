@@ -13,8 +13,9 @@ export class DatabaseService {
     return this.db.collection('positions').valueChanges();
   }
 
-  updateMyPosition(myUserName: string, position: any): Promise<any> {
-    return this.db.collection('positions').doc(myUserName).set({
+  updateMyPosition(username: string, position: Position): Promise<any> {
+    return this.db.collection('positions').doc(username).set({
+      username,
       position
     }, {
       merge: true
