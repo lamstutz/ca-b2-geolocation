@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
+import { Position } from './../../models/position.interface';
 
 @Injectable({
   providedIn: 'root'
