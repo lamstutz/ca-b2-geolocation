@@ -1,0 +1,10 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-input type="text" #usernameInput>username</ion-input>
+  <ion-button (click)="login(usernameInput.value)">let's go</ion-button>
+</ion-content>
